@@ -39,7 +39,10 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .visually-hidden {
   position: absolute;
@@ -57,6 +60,7 @@ a {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -69,14 +73,8 @@ a {
 .header-list {
   display: flex;
 }
-.half-logo {
-  font-family: "Raleway", sans-serif;
-  font-style: 400;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+.header-logo {
+  margin-right: 93px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -86,7 +84,16 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-right: 93px;
+  display: block;
+}
+.half-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 .header-list-item + .header-list-item {
   margin-left: 50px;
@@ -161,8 +168,20 @@ a {
   cursor: pointer;
   min-width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
 }
 /*--------------------FEATURES--------------------*/
+.features-list {
+  display: flex;
+  margin-left: -30px;
+  justify-content: space-between;
+}
+.features-list-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
 .features-list-item-title {
   font-weight: 700;
   font-size: 14px;
@@ -178,6 +197,14 @@ a {
   color: var(--main-text-color);
 }
 /*--------------------OCCUPATION-------------------*/
+.occupation-list {
+  display: flex;
+  margin-left: -30px;
+}
+.occupation-list-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
 .occupation-title {
   font-size: 36px;
   line-height: 1.16;
@@ -198,6 +225,14 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  margin-left: -30px;
+}
+.team-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 .team-list-item-content {
   padding-top: 30px;
@@ -268,6 +303,12 @@ address {
   color: var(--accent-color);
 }
 /*---------------------PRODUCTS--------------------*/
+.products-filters-list {
+  margin-bottom: 34px;
+  display: flex;
+  margin-left: -30px;
+  justify-content: center;
+}
 .products-filters-btn {
   font-weight: 500;
   font-size: 16px;
@@ -276,11 +317,37 @@ address {
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
+  padding: 6px 22px;
+  border-color: transparent;
 }
 .products-filters-btn:hover,
 .products-filters-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+.products-filters-btn {
+  flex-basis: calc(100% / 5 - 30px);
+  margin-left: 30px;
+}
+.products-list {
+  margin-bottom: 94px;
+  display: flex;
+  margin-left: -30px;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+.products-list-item {
+  flex-basis: calc(100% / 9 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.products-list-item-content {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 .products-list-item-title {
   font-weight: bold;
@@ -288,6 +355,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-bottom: 4px;
 }
 .products-list-item-text {
   font-size: 16px;
