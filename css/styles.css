@@ -58,8 +58,8 @@ a {
 }
 /*----------------------HEADER--------------------*/
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -173,14 +173,15 @@ a {
   padding: 10px 32px;
 }
 /*--------------------FEATURES--------------------*/
+.features-section {
+  padding-top: 94px;
+}
 .features-list {
   display: flex;
-  margin-left: -30px;
   justify-content: space-between;
 }
-.features-list-item {
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
+.features-list-item:nth-last-child(n + 1) {
+  margin-right: 30px;
 }
 .features-list-item-title {
   font-weight: 700;
@@ -199,11 +200,9 @@ a {
 /*--------------------OCCUPATION-------------------*/
 .occupation-list {
   display: flex;
-  margin-left: -30px;
 }
-.occupation-list-item {
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
+.occupation-list-item:nth-last-child(n + 1) {
+  margin-right: 30px;
 }
 .occupation-title {
   font-size: 36px;
@@ -214,10 +213,6 @@ a {
   margin-bottom: 50px;
 }
 /*----------------------TEAM---------------------*/
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .team-title {
   font-size: 36px;
   line-height: 42px;
@@ -228,14 +223,13 @@ a {
 }
 .team-list {
   display: flex;
-  margin-left: -30px;
 }
-.team-list-item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+.team-list-item:nth-last-child(n + 1) {
+  margin-right: 30px;
 }
 .team-list-item-content {
   padding-top: 30px;
+  padding-bottom: 124px;
 }
 .team-name {
   font-weight: 500;
@@ -274,19 +268,20 @@ a {
 address {
   font-style: normal;
 }
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-list-item-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 9px;
 }
 .footer-list-item-mail {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
 .footer-list-item-tel {
   font-size: 14px;
@@ -304,9 +299,8 @@ address {
 }
 /*---------------------PRODUCTS--------------------*/
 .products-filters-list {
-  margin-bottom: 34px;
+  margin-bottom: 56px;
   display: flex;
-  margin-left: -30px;
   justify-content: center;
 }
 .products-filters-btn {
@@ -325,21 +319,28 @@ address {
   color: #ffffff;
   background-color: var(--accent-color);
 }
-.products-filters-btn {
-  flex-basis: calc(100% / 5 - 30px);
-  margin-left: 30px;
+.products-filters-btn:nth-last-child(n + 1) {
+  margin-right: 30px;
 }
 .products-list {
   margin-bottom: 94px;
   display: flex;
-  margin-left: -30px;
   flex-wrap: wrap;
+  margin-right: -30px;
   margin-bottom: -30px;
 }
 .products-list-item {
-  flex-basis: calc(100% / 9 - 30px);
-  margin-left: 30px;
+  width: 370px;
+}
+.products-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.products-list-item:nth-last-child(n + 1) {
+  margin-right: 30px;
   margin-bottom: 30px;
+}
+.products-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 .products-list-item-content {
   padding-top: 20px;
